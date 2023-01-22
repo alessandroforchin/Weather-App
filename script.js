@@ -36,23 +36,23 @@ async function getWeather() {
 
         switch (data.weather[0].main) {
             case 'Clear':
-                document.body.style.backgroundImage = 'url("/images/sun.jpg")';
-                weatherPng.src = "/png/sunPng.png";
+                document.body.style.backgroundImage = 'url("./images/sun.jpg")';
+                weatherPng.src = "./png/sunPng.png";
                 break;
             case 'Clouds':
-                document.body.style.backgroundImage = 'url("/images/cloud.jpg")';
-                weatherPng.src = '/png/cloudPng.png';
+                document.body.style.backgroundImage = 'url("./images/cloud.jpg")';
+                weatherPng.src = './png/cloudPng.png';
                 break;
             case 'Rain':
             case 'Drizzle':
             case 'Mist':
             case 'Thunderstorm':
-                document.body.style.backgroundImage = 'url("/images/rain.jpg")';
-                weatherPng.src = '/png/rainPng.png';
+                document.body.style.backgroundImage = 'url("./images/rain.jpg")';
+                weatherPng.src = './png/rainPng.png';
                 break;
             case 'Snow':
-                document.body.style.backgroundImage = 'url("/images/snow.jpg")';
-                weatherPng.src = '/png/snowPng.png';
+                document.body.style.backgroundImage = 'url("./images/snow.jpg")';
+                weatherPng.src = './png/snowPng.png';
                 break;
             default:
                 break;
